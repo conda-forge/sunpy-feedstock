@@ -6,7 +6,7 @@ package:
 
 source:
   fn: sunpy-{{version}}.tar.gz
-  url: https://pypi.io/packages/source/s/sunpy/sunpy-{{ version }}.tar.gz
+  url: https://pypi.python.org/packages/75/d3/9b5578d40feaa7adb535b4ba40a455404989482f4fca1b2bf18e4bdb3ca9/sunpy-{{ version }}.tar.gz
   md5: 4fdf237bafb6cf8f5a783d2d98ad51a4
 
 build:
