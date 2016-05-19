@@ -91,7 +91,7 @@ test:
     - sunpy.visualization
     - sunpy.wcs
     - sunpy.wcs.tests
-  command:
+  commands:
     - python -c "import sunpy; sunpy.self_test()"
 
 about:
