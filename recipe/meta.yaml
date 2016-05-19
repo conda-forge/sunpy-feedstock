@@ -37,7 +37,7 @@ requirements:
     - sqlalchemy
     - beautiful-soup
     - requests
-    - bsddb  # [unix]
+    - bsddb  # [unix and py27]
     - pytest
     - scikit-image
     - wcsaxes
