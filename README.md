@@ -11,6 +11,18 @@ Summary: Python for Solar Physics
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sunpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sunpy-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/sunpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sunpy-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sunpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sunpy-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sunpy/badges/version.svg)](https://anaconda.org/conda-forge/sunpy)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sunpy/badges/downloads.svg)](https://anaconda.org/conda-forge/sunpy)
+
 Installing sunpy
 ================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `sunpy` available on your platform
 ```
 conda search sunpy --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sunpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sunpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sunpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sunpy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sunpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sunpy-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sunpy/badges/version.svg)](https://anaconda.org/conda-forge/sunpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sunpy/badges/downloads.svg)](https://anaconda.org/conda-forge/sunpy)
 
 
 Updating sunpy-feedstock
