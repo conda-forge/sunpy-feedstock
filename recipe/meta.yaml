@@ -32,7 +32,7 @@ requirements:
     - pandas >=0.12.1
     - matplotlib
     - suds-jurko
-    - glymur
+    #    - glymur
     - sqlalchemy
     - beautifulsoup4
     - requests
