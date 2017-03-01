@@ -27,7 +27,8 @@ requirements:
   run:
     - python
     - numpy >1.7.1
-    - astropy >=1.0
+    - astropy >=1.0 # [not py36]
+    - astropy >= 1.3 # [py36]
     - scipy
     - pandas >=0.12.1
     - matplotlib
@@ -39,7 +40,7 @@ requirements:
     - bsddb  # [unix and py27]
     - pytest
     - scikit-image
-    - wcsaxes
+    - wcsaxes # [not py36]
 
 test:
   imports:
