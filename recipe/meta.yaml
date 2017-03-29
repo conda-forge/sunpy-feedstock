@@ -33,7 +33,7 @@ requirements:
     - pandas >=0.12.1
     - matplotlib
     - suds-jurko
-    #    - glymur
+    - glymur
     - sqlalchemy
     - beautifulsoup4
     - requests
@@ -100,4 +100,4 @@ extra:
   recipe-maintainers:
     - cadair
     - ehsteve
-    - nabobalis
+    - nabobalis (High Energy)
