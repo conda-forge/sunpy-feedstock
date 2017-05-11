@@ -1,4 +1,4 @@
-{% set version = "0.7.7" %}
+{% set version = "0.7.8" %}
 
 package:
   name: sunpy
@@ -7,7 +7,7 @@ package:
 source:
   fn: sunpy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/s/sunpy/sunpy-{{ version }}.tar.gz
-  md5: 128f5e211992aaafff88dc88f6fcf9d1
+  md5: 97a5cf2bf92b340bff97dda9e8bd2e34
 
 build:
   number: 1
@@ -33,7 +33,7 @@ requirements:
     - pandas >=0.12.1
     - matplotlib
     - suds-jurko
-    #    - glymur
+    - glymur
     - sqlalchemy
     - beautifulsoup4
     - requests
