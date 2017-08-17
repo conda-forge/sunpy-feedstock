@@ -39,6 +39,7 @@ requirements:
     - bsddb  # [unix and py27]
     - pytest
     - hypothesis
+    - pytest-mock
     - scikit-image
 
 test:
