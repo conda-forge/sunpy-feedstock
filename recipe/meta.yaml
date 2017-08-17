@@ -38,6 +38,7 @@ requirements:
     - requests
     - bsddb  # [unix and py27]
     - pytest
+    - hypothesis
     - scikit-image
 
 test:
