@@ -1,4 +1,4 @@
-{% set version = "0.7.9" %}
+{% set version = "0.8.0" %}
 
 package:
   name: sunpy
@@ -7,7 +7,7 @@ package:
 source:
   fn: sunpy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/s/sunpy/sunpy-{{ version }}.tar.gz
-  md5: a1c6cec0d4606527075b5717dbf2108b
+  md5: 356c89ee16bd6e52d03069ab32524a03
 
 build:
   number: 1
@@ -18,7 +18,7 @@ requirements:
     - python
     - setuptools
     - numpy >1.7.1
-    - astropy >=1.0
+    - astropy >=2.0
     - scipy
     - matplotlib
     - pandas
@@ -27,8 +27,7 @@ requirements:
   run:
     - python
     - numpy >1.7.1
-    - astropy >=1.0  # [not py36]
-    - astropy >=1.3  # [py36]
+    - astropy >=2.0
     - scipy
     - pandas >=0.12.1
     - matplotlib
@@ -40,7 +39,6 @@ requirements:
     - bsddb  # [unix and py27]
     - pytest
     - scikit-image
-    - wcsaxes  # [not py36]
 
 test:
   imports:
