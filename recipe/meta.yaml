@@ -26,7 +26,8 @@ requirements:
 
   run:
     - python
-    - numpy  >1.7.1<1.14  # [py27]
+    - numpy >1.7.1<1.14  # [py27]
+    - numpy >1.7.1  # [not py27]
     - astropy >=2.0
     - scipy
     - pandas >=0.12.1
