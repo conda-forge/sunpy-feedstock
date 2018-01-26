@@ -18,6 +18,7 @@ requirements:
     - python
     - setuptools
     - numpy >1.7.1
+    - numpy <1.14 # [py27]
     - astropy >=2.0
     - scipy
     - matplotlib
@@ -27,6 +28,7 @@ requirements:
   run:
     - python
     - numpy >1.7.1
+    - numpy <1.14 # [py27]
     - astropy >=2.0
     - scipy
     - pandas >=0.12.1
