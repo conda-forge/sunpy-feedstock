@@ -17,7 +17,8 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy
+    - numpy <1.14  # [py27]
+    - numpy >1.7.1  # [not py27]
     - astropy >=2.0
     - scipy
     - matplotlib
