@@ -14,14 +14,16 @@ Summary: Python for Solar Physics
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sunpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sunpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sunpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sunpy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sunpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sunpy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/sunpy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/sunpy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/sunpy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/sunpy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/sunpy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/sunpy-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sunpy/badges/version.svg)](https://anaconda.org/conda-forge/sunpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sunpy/badges/downloads.svg)](https://anaconda.org/conda-forge/sunpy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sunpy-green.svg)](https://anaconda.org/conda-forge/sunpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sunpy.svg)](https://anaconda.org/conda-forge/sunpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sunpy.svg)](https://anaconda.org/conda-forge/sunpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sunpy.svg)](https://anaconda.org/conda-forge/sunpy) |
 
 Installing sunpy
 ================
