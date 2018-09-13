@@ -46,6 +46,7 @@ requirements:
     - pytest-astropy
     - scikit-image
     - drms
+    - pillow >= 5.2.0
 
 test:
   imports:
