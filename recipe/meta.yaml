@@ -19,6 +19,7 @@ requirements:
 
   host:
     - python
+    - pip
     - setuptools
     - numpy >=1.11|!=1.14.0  # [py27]
     - numpy >=1.11  # [not py27]
