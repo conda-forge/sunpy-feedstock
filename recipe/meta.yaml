@@ -20,8 +20,7 @@ requirements:
   host:
     - python
     - setuptools
-    - numpy >=1.11|!=1.14.0|!=1.15.3  # [py27]
-    - numpy >=1.11|!=1.15.3  # [not py27]
+    - numpy >=1.11,!=1.14.0,!=1.15.3
     - astropy >=2.0.3
     - scipy
     - matplotlib
@@ -30,8 +29,7 @@ requirements:
 
   run:
     - python
-    - numpy >=1.11|!=1.14.0|!=1.15.3  # [py27]
-    - numpy >=1.11|!=1.15.3  # [not py27]
+    - numpy >=1.11,!=1.14.0,!=1.15.3
     - astropy >=2.0.3
     - scipy
     - pandas >=0.12.1
