@@ -11,12 +11,11 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vvv"
+  script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - {{ compiler('c') }}
-    - pip 
 
   host:
     - python
