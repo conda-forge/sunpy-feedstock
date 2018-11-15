@@ -10,12 +10,13 @@ source:
   sha256: 08b70cbf1c7f641eacc06b23bc54873dc2d397e0a97991e806801ed1e0177b2b
 
 build:
-  number: 1000
-  script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vvv"
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - pip 
 
   host:
     - python
