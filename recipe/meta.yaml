@@ -10,7 +10,7 @@ source:
   sha256: 08b70cbf1c7f641eacc06b23bc54873dc2d397e0a97991e806801ed1e0177b2b
 
 build:
-  number: 0
+  number: 1000
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv"
 
 requirements:
@@ -20,6 +20,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - numpy >=1.11,!=1.14.0,!=1.15.3
     - astropy >=2.0.3
     - scipy
