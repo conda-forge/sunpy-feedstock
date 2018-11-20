@@ -15,7 +15,7 @@ build:
 
 requirements:
   build:
-    - {{compiler('c')}}
+    - {{compiler('c')}}  # [not win]
   host:
     - python
     - setuptools
@@ -36,7 +36,6 @@ requirements:
     - sqlalchemy
     - beautifulsoup4
     - requests
-    - bsddb  # [unix and py27]
     - pytest
     - hypothesis
     - python-dateutil
