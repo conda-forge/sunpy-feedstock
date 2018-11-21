@@ -1,13 +1,13 @@
 About sunpy
 ===========
 
-Home: http://www.sunpy.org/
+Home: https://www.sunpy.org/
 
 Package license: BSD 2-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Python for Solar Physics
+Summary: SunPy is an open-source Python library for Solar Physics data analysis and visualization.
 
 
 
