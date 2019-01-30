@@ -36,8 +36,8 @@ requirements:
     - sqlalchemy
     - beautifulsoup4
     - requests
-    - pytest <3.7 # [py27]
-    - pytest # [py>=35]
+    - pytest <3.7  # [py27]
+    - pytest  # [py>=35]
     - hypothesis
     - python-dateutil
     - mock
