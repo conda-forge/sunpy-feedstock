@@ -46,6 +46,7 @@ requirements:
     - scikit-image
     - drms
     - pillow >=5.2.0
+    - python-pyqt5  # [py27]
 
 test:
   requires:
