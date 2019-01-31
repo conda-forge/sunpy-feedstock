@@ -46,12 +46,11 @@ requirements:
     - scikit-image
     - drms
     - pillow >=5.2.0
-    - pyqt
+    - pyqt 5.6.*  # [py27]
 
 test:
   requires:
     - pytest <3.7
-    - pyqt
   imports:
     - sunpy
     - sunpy.cm
