@@ -51,6 +51,7 @@ requirements:
 test:
   requires:
     - pytest <3.7
+    - pyqt
   imports:
     - sunpy
     - sunpy.cm
