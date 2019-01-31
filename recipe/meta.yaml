@@ -19,23 +19,28 @@ requirements:
   host:
     - python
     - setuptools
-    - numpy >=1.12,!=1.14.0,!=1.15.3
-    - astropy >=2.0.3
+    - numpy
+    - astropy
     - scipy
-    - matplotlib >=1.3
-    - pandas >=0.12.1
+    - matplotlib
+    - pandas
   run:
     - python
-    - numpy >=1.12,!=1.14.0,!=1.15.3
-    - astropy >=2.0.3
+    - numpy
+    - astropy
     - scipy
-    - pandas >=0.12.1
-    - matplotlib >=1.3
+    - pandas
+    - matplotlib
     - suds-jurko
     - glymur
     - sqlalchemy
     - beautifulsoup4
     - requests
+    - scikit-image
+    - drms
+    
+test:
+  requires:
     - pytest <3.7  # [py27]
     - pytest  # [py>=35]
     - hypothesis
@@ -43,59 +48,37 @@ requirements:
     - mock
     - pytest-mock
     - pytest-astropy
-    - scikit-image
-    - drms
-    - pillow >=5.2.0
-    - pyqt 5.6.*  # [py27]
-
-test:
-  requires:
-    - pytest <3.7
   imports:
     - sunpy
     - sunpy.cm
     - sunpy.coordinates
     - sunpy.data
-    - sunpy.data.test
-    - sunpy.data.test.waveunit
     - sunpy.database
-    - sunpy.database.tests
     - sunpy.image
-    - sunpy.image.tests
     - sunpy.instr
     - sunpy.instr.iris
     - sunpy.io
-    - sunpy.io.tests
     - sunpy.lightcurve
     - sunpy.lightcurve.sources
-    - sunpy.lightcurve.tests
     - sunpy.map
     - sunpy.map.sources
-    - sunpy.map.tests
     - sunpy.net
     - sunpy.net.hek
     - sunpy.net.hek2vso
     - sunpy.net.helio
     - sunpy.net.jsoc
-    - sunpy.net.tests
     - sunpy.net.vso
     - sunpy.physics
     - sunpy.physics.transforms
     - sunpy.roi
     - sunpy.spectra
     - sunpy.spectra.sources
-    - sunpy.spectra.tests
     - sunpy.sun
-    - sunpy.sun.tests
     - sunpy.tests
-    - sunpy.tests.tests
     - sunpy.time
-    - sunpy.time.tests
     - sunpy.util
-    - sunpy.util.tests
     - sunpy.visualization
     - sunpy.wcs
-    - sunpy.wcs.tests
   commands:
     - python -c "import sunpy, sys; sys.exit(sunpy.self_test())"
 
