@@ -1,4 +1,4 @@
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: sunpy
@@ -7,10 +7,10 @@ package:
 source:
   fn: sunpy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/s/sunpy/sunpy-{{ version }}.tar.gz
-  sha256: 429c8fbf4823eac01a31b2636358756c9a24ec4693da13829297532e73159e73
+  sha256: ff0e68b011d26035d9a7417769311725423042eff48c14729a14bb0cd078cb83
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
 
 requirements:
@@ -36,64 +36,49 @@ requirements:
     - sqlalchemy
     - beautifulsoup4
     - requests
-    - pytest
+    - scikit-image
+    - drms
+
+test:
+  requires:
+    - pytest <3.7  # [py27]
+    - pytest  # [py>=35]
     - hypothesis
     - python-dateutil
     - mock
     - pytest-mock
     - pytest-astropy
-    - scikit-image
-    - drms
-    - pillow >=5.2.0
-
-test:
-  requires:
-    - pytest <4
   imports:
     - sunpy
     - sunpy.cm
     - sunpy.coordinates
     - sunpy.data
-    - sunpy.data.test
-    - sunpy.data.test.waveunit
     - sunpy.database
-    - sunpy.database.tests
     - sunpy.image
-    - sunpy.image.tests
     - sunpy.instr
     - sunpy.instr.iris
     - sunpy.io
-    - sunpy.io.tests
     - sunpy.lightcurve
     - sunpy.lightcurve.sources
-    - sunpy.lightcurve.tests
     - sunpy.map
     - sunpy.map.sources
-    - sunpy.map.tests
     - sunpy.net
     - sunpy.net.hek
     - sunpy.net.hek2vso
     - sunpy.net.helio
     - sunpy.net.jsoc
-    - sunpy.net.tests
     - sunpy.net.vso
     - sunpy.physics
     - sunpy.physics.transforms
     - sunpy.roi
     - sunpy.spectra
     - sunpy.spectra.sources
-    - sunpy.spectra.tests
     - sunpy.sun
-    - sunpy.sun.tests
     - sunpy.tests
-    - sunpy.tests.tests
     - sunpy.time
-    - sunpy.time.tests
     - sunpy.util
-    - sunpy.util.tests
     - sunpy.visualization
     - sunpy.wcs
-    - sunpy.wcs.tests
   commands:
     - python -c "import sunpy, sys; sys.exit(sunpy.self_test())"
 
