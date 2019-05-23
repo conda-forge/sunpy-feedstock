@@ -19,6 +19,7 @@ requirements:
   host:
     - python >=3.6
     - setuptools
+    - setuptools_scm
     - numpy >=1.14.5
     - astropy >=3.1
     - scipy
@@ -26,7 +27,7 @@ requirements:
     - pandas
     - parfive
   run:
-    - python >=3
+    - python >=3.6
     - setuptools
     - numpy >=1.14.5
     - astropy >=3.1
