@@ -43,6 +43,7 @@ test:
     - hypothesis
     - pytest-astropy
     - pytest-mock
+    - jsonschema >=2.3,<=2.6
     - asdf
   imports:
     - sunpy
