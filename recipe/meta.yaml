@@ -12,16 +12,17 @@ source:
 build:
   number: 0
   script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
-
+  skip: true  # [py27]
+  
 requirements:
   build:
     - {{compiler('c')}}  # [not win]
   host:
-    - python >=3
+    - python
     - setuptools_scm
     - numpy >=1.14.5
   run:
-    - python >=3
+    - python
     - setuptools
     - numpy >=1.14.5
     - astropy >=3.1
