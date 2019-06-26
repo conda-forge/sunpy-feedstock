@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: sunpy
@@ -7,7 +7,7 @@ package:
 source:
   fn: sunpy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/s/sunpy/sunpy-{{ version }}.tar.gz
-  sha256: 54b8dafa9902d5e72e939b8de2eb0c56bc7610e67b9501d40f4fc0756a7ec57b
+  sha256: 6f93e20b68d3c76d07ac3c0c9610b2ad9017990bf14c52609b0a3270cfde7049
 
 build:
   number: 0
