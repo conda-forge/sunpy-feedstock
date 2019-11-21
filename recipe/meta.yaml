@@ -45,6 +45,7 @@ test:
     - pytest-astropy
     - pytest-mock
     - jsonschema >=2.3,<=2.6
+    - semanti-version==2.6.0
     - asdf
   imports:
     - sunpy
