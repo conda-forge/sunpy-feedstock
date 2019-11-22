@@ -80,7 +80,7 @@ test:
 about:
   home: https://www.sunpy.org/
   license:  BSD 2-Clause
-  license_file: LICENSE.txt
+  license_file: LICENSE.rst
   summary: "SunPy is an open-source Python library for Solar Physics data analysis and visualization."
 
 extra:
