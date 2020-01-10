@@ -1,4 +1,4 @@
-{% set version = "1.0.6" %}
+{% set version = "1.1rc2" %}
 
 package:
   name: sunpy
@@ -7,7 +7,7 @@ package:
 source:
   fn: sunpy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/s/sunpy/sunpy-{{ version }}.tar.gz
-  sha256: 0884b00806b5b47cd2709ecc022b557266e72edfbc511133eda77dfbf4a9d2e7
+  sha256: 7ad75d0b88a4777f911a76473db2707a9baba15691bb041aa9b2088fdfdf67ac
 
 build:
   number: 1
@@ -38,6 +38,7 @@ requirements:
     - python-dateutil
     - zeep
     - tqdm
+    - importlib_resources
 
 test:
   requires:
