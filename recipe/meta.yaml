@@ -38,6 +38,7 @@ requirements:
     - python-dateutil
     - zeep
     - tqdm
+    - importlib_resources
 
 test:
   requires:
