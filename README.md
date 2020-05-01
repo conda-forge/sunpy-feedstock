@@ -3,7 +3,7 @@ About sunpy
 
 Home: https://www.sunpy.org/
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: BSD 3-Clause
 
