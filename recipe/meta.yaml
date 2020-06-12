@@ -23,6 +23,7 @@ requirements:
     - python
     - pip
     - setuptools_scm
+    - extension-helpers
     - numpy
   run:
     - python
