@@ -1,17 +1,19 @@
+{% set name = "sunpy" %}
 {% set version = "2.0.0" %}
+{% set sha256 = "26d27e5ec855a77bad3d42b7b4ec1d6f3c9349aaddf8e2ff8437a2117f01b25d" %}
 
 package:
-  name: sunpy
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: sunpy-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/s/sunpy/sunpy-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 16b1fb65b67b5bd451a0a8c05b131a969242d2979eab024fc0dcbb5657bb3a54
 
 build:
   number: 0
-  script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: true  # [py<36]
 
 requirements:
@@ -19,6 +21,7 @@ requirements:
     - {{ compiler('c') }}  # [not win]
   host:
     - python
+    - pip
     - setuptools_scm
     - numpy
   run:
@@ -38,7 +41,6 @@ requirements:
     - python-dateutil
     - zeep
     - tqdm
-    - importlib_resources
 
 test:
   requires:
@@ -81,6 +83,8 @@ about:
   license: BSD 2-Clause
   license_file: LICENSE.rst
   summary: SunPy is an open-source Python library for Solar Physics data analysis and visualization.
+  license_family: BSD
+  dev_url: https://github.com/sunpy/sunpy
 
 extra:
   recipe-maintainers:
