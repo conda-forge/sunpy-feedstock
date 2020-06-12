@@ -1,0 +1,26 @@
+From 78ac7210c3c7f31717b1cf3a210782f7a28cf432 Mon Sep 17 00:00:00 2001
+From: Stuart Mumford <stuart@cadair.com>
+Date: Fri, 12 Jun 2020 21:58:10 +0100
+Subject: [PATCH 2/2] Don't pass headers to parfive 1.0
+
+---
+ sunpy/util/parfive_helpers.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/sunpy/util/parfive_helpers.py b/sunpy/util/parfive_helpers.py
+index 67c26fd57..dc05fa6f7 100644
+--- a/sunpy/util/parfive_helpers.py
++++ b/sunpy/util/parfive_helpers.py
+@@ -22,6 +22,8 @@ class Downloader(parfive.Downloader):
+                        f"sunpy/{sunpy.__version__} parfive/{parfive.__version__} "
+                        f"aiohttp/{aiohttp.__version__} python/{sys.version[:5]}"}
+ 
+-        kwargs["headers"] = headers
++        # Only specify headers to parfive 1.1
++        if parfive.__version__.startswith('1.0'):
++            kwargs["headers"] = headers
+ 
+         super().__init__(*args, **kwargs)
+-- 
+2.25.1
+
