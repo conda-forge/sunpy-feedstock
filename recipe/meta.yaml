@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "26d27e5ec855a77bad3d42b7b4ec1d6f3c9349aaddf8e2ff8437a2117f01b25d" %}
+{% set version = "2.0.1rc1" %}
+{% set sha256 = "d94287eb07886db23b51868880de58d2260d778eab6af46e88a5d422a2c38433" %}
 
 package:
   name: {{ name|lower }}
@@ -9,10 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 16b1fb65b67b5bd451a0a8c05b131a969242d2979eab024fc0dcbb5657bb3a54
-  patches:
-    - 0001-Fix-parfive-requirements-for-3.6.patch
-    - 0002-Don-t-pass-headers-to-parfive-1.0.patch
+  sha256: {{ sha256 }}
 
 build:
   number: 0
