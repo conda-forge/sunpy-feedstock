@@ -7,8 +7,5 @@ import sys
 os.environ['OMP_NUM_THREADS'] = '1'
 
 import sunpy
-import numpy as np
-
-print(os.environ['OMP_NUM_THREADS'])
 
 sys.exit(sunpy.self_test())
