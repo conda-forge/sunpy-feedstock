@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "2.0.1" %}
-{% set sha256 = "0d0e8f76a2b31c900ccfc7a65165620cdbd85b8a390dc251f04c363d6186d647" %}
+{% set version = "2.0.2" %}
+{% set sha256 = "678e7e2e94c802aab86fbbf46abeb0396898f653602e68b7b4ac9eab240e1569" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<36]
 
 requirements:
@@ -75,9 +75,6 @@ test:
     - sunpy.timeseries.sources
     - sunpy.util
     - sunpy.visualization
-
-  commands:
-    - python -c "import sunpy, sys; sys.exit(sunpy.self_test())"
 
 about:
   home: https://www.sunpy.org/
