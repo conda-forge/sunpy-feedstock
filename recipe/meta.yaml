@@ -42,6 +42,8 @@ requirements:
     - python-dateutil
     - zeep
     - tqdm
+  run_constrained:
+    - aioftp <0.17  # [py<37]
 
 test:
   requires:
