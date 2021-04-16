@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "2.1.3" %}
-{% set sha256 = "71c995e3371052a9b100fb17d8bd2d081fceb9a3df3c015418bd3361bd5878cf" %}
+{% set version = "2.1.4" %}
+{% set sha256 = "5fa70b038785f34fe44070eb153b74515771113b3c30d1cf343abf5c8e3fabce" %}
 
 package:
   name: {{ name|lower }}
