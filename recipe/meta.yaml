@@ -1,5 +1,5 @@
-{% set name = "sunpy" %}
-{% set version = "2.1.5" %}
+% set name = "sunpy" %}
+{% set version = "3.0.0rc3" %}
 {% set sha256 = "df46101107b248577483d88e547badfc041dcbf6932bdc82004c4b3ee958baff" %}
 
 package:
@@ -29,20 +29,21 @@ requirements:
     - python
     - setuptools
     - {{ pin_compatible('numpy') }}
-    - astropy >=4.0.3
-    - scipy >=1.2.0
-    - matplotlib-base >=2.2.2
+    - astropy >=4.1
+    - scipy >=1.3.0
+    - matplotlib-base >=3.1
     - pandas >=0.24.0
-    - parfive >=1.1.0
-    - sqlalchemy
-    - scikit-image
-    - glymur
-    - beautifulsoup4
+    - parfive >=1.2.0
+    - sqlalchemy >=1.3.4
+    - scikit-image >=0.16
+    - glymur >= 0.8.18,!=0.9.0
+    - beautifulsoup4 >=4.8.0
     - drms >=0.6.1
     - python-dateutil
-    - zeep
-    - tqdm
+    - zeep >=3.4.0
+    - tqdm >=4.32.1
     - h5netcdf >=0.8.1
+    - h5py >= 3.1 # Not a direct dependancy, but goes files wont load without
 
 test:
   requires:
