@@ -1,4 +1,4 @@
-% set name = "sunpy" %}
+{% set name = "sunpy" %}
 {% set version = "3.0.0rc3" %}
 {% set sha256 = "df46101107b248577483d88e547badfc041dcbf6932bdc82004c4b3ee958baff" %}
 
@@ -43,7 +43,7 @@ requirements:
     - zeep >=3.4.0
     - tqdm >=4.32.1
     - h5netcdf >=0.8.1
-    - h5py >= 3.1.0 # Not a direct dependancy, but goes files wont load without
+    - h5py >=3.1.0 # Not a direct dependancy, but goes files wont load without
 
 test:
   requires:
