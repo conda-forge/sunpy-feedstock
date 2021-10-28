@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "3.0.2" %}
-{% set sha256 = "5dcd2c5cbf2f419da00abde00798d067b515c2f082ce63f4fbe1de47682c1c41" %}
+{% set version = "3.1.0rc1" %}
+{% set sha256 = "1963f0a66853d6e184fe0b17379ad2700f06514fe7c31f7726f703d46cefcd27" %}
 
 package:
   name: {{ name|lower }}
@@ -44,6 +44,7 @@ requirements:
     - tqdm >=4.32.1
     - h5netcdf >=0.8.1
     - h5py >=3.1.0 # Not a direct dependancy, but goes files wont load without
+    - mpl_animators >=1.0.0
 
 test:
   requires:
@@ -91,3 +92,4 @@ extra:
     - cadair
     - ehsteve
     - wtbarnes
+    - nabobalis
