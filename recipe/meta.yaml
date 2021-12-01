@@ -56,7 +56,6 @@ test:
     - cdflib
     - pytest-mpl
     - jplephem
-    - pytest-intercept-remote
   imports:
     - sunpy
     - sunpy.cm
