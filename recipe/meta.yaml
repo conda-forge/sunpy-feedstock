@@ -52,6 +52,10 @@ test:
     - pytest-astropy
     - pytest-mock
     - asdf
+    - jplephem
+    - pytest-mpl
+    - reproject
+    - cdflib
   imports:
     - sunpy
     - sunpy.cm
