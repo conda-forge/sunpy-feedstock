@@ -45,7 +45,7 @@ requirements:
     - python-dateutil >=2.8.0
     - zeep >=3.4.0
     - tqdm >=4.32.1
-    - h5netcdf >=0.8.1
+    - h5netcdf >=0.8.1,<0.14
     - h5py >=3.1.0 # Not a direct dependancy, but goes files wont load without
     - mpl_animators >=1.0.0
 
