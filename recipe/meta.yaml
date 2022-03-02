@@ -54,7 +54,7 @@ test:
     - hypothesis
     - pytest-astropy
     - pytest-mock
-    - asdf
+    - asdf <2.10
     - jplephem
     - pytest-mpl
     - reproject
