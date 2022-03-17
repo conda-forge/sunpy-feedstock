@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "3.1.4" %}
-{% set sha256 = "4c3b25635294a2147dcf2c89ebe07de4c30cb142f54c1978f4bfa7482bd9f672" %}
+{% set version = "3.1.5" %}
+{% set sha256 = "13a9dc9a6bc58320c9f5efe45f6a418c0b680fd27edbaee65fed715ec794b155" %}
 
 package:
   name: {{ name|lower }}
@@ -45,9 +45,10 @@ requirements:
     - python-dateutil >=2.8.0
     - zeep >=3.4.0
     - tqdm >=4.32.1
-    - h5netcdf >=0.8.1,<0.14
+    - h5netcdf >=0.8.1
     - h5py >=3.1.0 # Not a direct dependancy, but goes files wont load without
     - mpl_animators >=1.0.0
+    - cdflib >=0.3.19,!=0.4.0
 
 test:
   requires:
