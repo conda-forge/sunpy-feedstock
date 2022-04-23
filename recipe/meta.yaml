@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "3.1.6" %}
-{% set sha256 = "988e56e040f34e4dc6af24d06e79af3fe92cdd5243cf0e1dadec3dc03f7eb481" %}
+{% set version = "4.0.0rc1" %}
+{% set sha256 = "aa0367a05d5e8604aaaf7aa84bf32d9529dfe1a5161c5e3d5204825e8d0526b3" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<37]
 
