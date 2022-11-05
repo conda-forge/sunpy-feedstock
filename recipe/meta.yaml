@@ -66,14 +66,11 @@ requirements:
 test:
   requires:
     - hypothesis
+    - jplephem
     - pytest-astropy
     - pytest-mock
-    - pytest-xdist
-    - asdf !=2.10.0
-    - jplephem
     - pytest-mpl
-    - reproject
-    - cdflib
+    - pytest-xdist
   imports:
     - sunpy
     - sunpy.cm
