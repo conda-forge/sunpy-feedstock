@@ -64,12 +64,15 @@ requirements:
 
 test:
   requires:
+    - hvpy
     - hypothesis
     - jplephem
+    - py-opencv
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
     - pytest-xdist
+
   imports:
     - sunpy
     - sunpy.cm
