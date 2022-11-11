@@ -67,7 +67,7 @@ test:
     - hvpy
     - hypothesis
     - jplephem
-    - py-opencv
+    - opencv
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
