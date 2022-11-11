@@ -30,7 +30,6 @@ requirements:
     - numpy
   run:
     - python
-    - setuptools
     # base
     - {{ pin_compatible('numpy') }}
     - astropy >=4.2.1
