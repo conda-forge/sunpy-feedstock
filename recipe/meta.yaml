@@ -30,7 +30,6 @@ requirements:
     - numpy
   run:
     - python
-    - setuptools
     # base
     - {{ pin_compatible('numpy') }}
     - astropy >=4.2.1
@@ -65,12 +64,15 @@ requirements:
 
 test:
   requires:
+    - hvpy
     - hypothesis
     - jplephem
+    - opencv
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
     - pytest-xdist
+
   imports:
     - sunpy
     - sunpy.cm
