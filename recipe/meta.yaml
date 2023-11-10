@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "5.0.0rc1" %}
-{% set sha256 = "919a53efda7b4131c2058804120acb66eb0de52d615917a772aefc9b3014868c" %}
+{% set version = "5.1.0rc1" %}
+{% set sha256 = "cfd3ed4725a8860a68d096668493f97037749fb9de4f4d80b5614f0c3d8abb7f" %}
 
 package:
   name: {{ name|lower }}
@@ -61,6 +61,8 @@ requirements:
     - h5netcdf >=0.11.0
     - h5py >=3.1.0 # Not a direct dependancy, but goes files wont load without
     - pandas >=1.2.0
+    # spicepy
+    - spiceypy >=5.0.0
 
 test:
   requires:
