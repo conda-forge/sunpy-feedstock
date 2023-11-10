@@ -81,7 +81,11 @@ else
         EXTRA_CB_OPTIONS="${EXTRA_CB_OPTIONS:-} --no-test"
     fi
 
+<<<<<<< HEAD
     conda build ./recipe -m ./.ci_support/${CONFIG}.yaml \
+=======
+    conda mambabuild ./recipe -m ./.ci_support/${CONFIG}.yaml \
+>>>>>>> fcdec32ee216b93e6035f57c420a3cdf3ac58c61
         --suppress-variables ${EXTRA_CB_OPTIONS:-} \
         --clobber-file ./.ci_support/clobber_${CONFIG}.yaml \
         --extra-meta flow_run_id="$flow_run_id" remote_url="$remote_url" sha="$sha"
