@@ -50,7 +50,9 @@ requirements:
     - matplotlib-base >=3.5.0
     - mpl_animators >=1.0.0
     - reproject
-    - opencv-python
+    - libopencv
+    - opencv
+    - py-opencv
     # net
     - beautifulsoup4 >=4.8.0
     - drms >=0.6.1,<0.7.0
