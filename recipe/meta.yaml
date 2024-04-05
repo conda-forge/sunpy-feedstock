@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "5.1.1" %}
-{% set sha256 = "9367ec9af2a397fcd59638b2007208d4eeaf9ed24e3e8dc2596c26b1896c2e1f" %}
+{% set version = "5.1.2" %}
+{% set sha256 = "d7fa33d88af52bb9d1e81d933d9cd28dbca2003c90c9197313d2aa4e0ec4c240" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<39]
 
@@ -70,6 +70,7 @@ test:
     - hypothesis
     - jplephem
     - opencv
+    - libopencv *=headless*               # [unix]
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
