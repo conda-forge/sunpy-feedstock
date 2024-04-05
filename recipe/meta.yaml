@@ -70,6 +70,7 @@ test:
     - hypothesis
     - jplephem
     - opencv
+    - py-opencv
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
@@ -115,4 +116,3 @@ extra:
     - cadair
     - wtbarnes
     - nabobalis
-    - dstansby
