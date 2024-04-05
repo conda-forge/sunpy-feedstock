@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "5.0.3" %}
-{% set sha256 = "507791e9d1f3ad698d708a8cfad144436f6031d67c33490cf6cab096638282f9" %}
+{% set version = "5.0.4" %}
+{% set sha256 = "f6e7f7aaa407a04000df2fdb39a8d32e52d9c7bffe3a177564f996155da3bd1a" %}
 
 package:
   name: {{ name|lower }}
@@ -68,6 +68,7 @@ test:
     - hypothesis
     - jplephem
     - opencv
+    - libopencv *=headless*               # [unix]
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
