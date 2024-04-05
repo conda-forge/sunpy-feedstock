@@ -70,7 +70,7 @@ test:
     - hypothesis
     - jplephem
     - opencv
-    - libopencv *=headless*
+    - libopencv *=headless*               # [unix]
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
