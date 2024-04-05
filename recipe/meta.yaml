@@ -70,7 +70,6 @@ test:
     - hypothesis
     - jplephem
     - opencv
-    - opencv-python
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
