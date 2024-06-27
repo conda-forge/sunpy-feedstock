@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<39]
 
@@ -32,7 +32,6 @@ requirements:
   run:
     - python
     # base
-    - {{ pin_compatible('numpy') }}
     - astropy >=5.0.6,!=5.1.0
     - packaging >=19.0
     - parfive >=2.0.0
