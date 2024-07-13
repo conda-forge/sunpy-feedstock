@@ -48,9 +48,6 @@ requirements:
     - matplotlib-base >=3.5.0
     - mpl_animators >=1.0.0
     - reproject >=0.9.0
-    # We don't mandate this on the core recipe
-    # opencv
-    # - opencv >=4.6.0
     # net
     - beautifulsoup4 >=4.11.0
     - drms >=0.7.1
