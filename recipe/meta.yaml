@@ -28,7 +28,7 @@ requirements:
     - pip
     - setuptools_scm
     - extension-helpers
-    - numpy
+    - numpy >=1.23.0
   run:
     - python
     # base
