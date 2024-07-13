@@ -70,6 +70,7 @@ test:
     - hvpy
     - hypothesis
     - jplephem
+    - scikit-image
     - libopencv *=headless*               # [unix]
     - opencv
     - pytest-astropy
