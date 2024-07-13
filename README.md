@@ -130,14 +130,14 @@ Current release info
 Installing sunpy
 ================
 
-Installing `sunpy` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `sunpy` from the `conda-forge/label/sunpy_rc` channel can be achieved by adding `conda-forge/label/sunpy_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/sunpy_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sunpy` can be installed with `conda`:
+Once the `conda-forge/label/sunpy_rc` channel has been enabled, `sunpy` can be installed with `conda`:
 
 ```
 conda install sunpy
@@ -152,26 +152,26 @@ mamba install sunpy
 It is possible to list all of the versions of `sunpy` available on your platform with `conda`:
 
 ```
-conda search sunpy --channel conda-forge
+conda search sunpy --channel conda-forge/label/sunpy_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search sunpy --channel conda-forge
+mamba search sunpy --channel conda-forge/label/sunpy_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search sunpy --channel conda-forge
+mamba repoquery search sunpy --channel conda-forge/label/sunpy_rc
 
 # List packages depending on `sunpy`:
-mamba repoquery whoneeds sunpy --channel conda-forge
+mamba repoquery whoneeds sunpy --channel conda-forge/label/sunpy_rc
 
 # List dependencies of `sunpy`:
-mamba repoquery depends sunpy --channel conda-forge
+mamba repoquery depends sunpy --channel conda-forge/label/sunpy_rc
 ```
 
 
