@@ -81,7 +81,7 @@ about:
   home: https://www.sunpy.org/
   license: BSD-2-Clause
   license_file: LICENSE.rst
-  summary: "SunPy core package: Python for Solar Physics"
+  summary: SunPy core package - Python for Solar Physics
   license_family: BSD
   dev_url: https://github.com/sunpy/sunpy
 
