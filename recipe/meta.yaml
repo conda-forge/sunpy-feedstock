@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "5.1.4" %}
-{% set sha256 = "cbeb70d48f82eb00c5949bce6d6ace862b2baf2402797ba5930172442b808130" %}
+{% set version = "6.0.0rc1.post1" %}
+{% set sha256 = "d172801de81fa7a41126a806ad29e29d7d9b23ad73e9b706f7ce77d88f2d52a7" %}
 
 package:
   name: {{ name|lower }}
@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py<39]
+  skip: true  # [py<310]
 
 requirements:
   build:
@@ -32,82 +32,56 @@ requirements:
   run:
     - python
     # base
-    - astropy >=5.0.6,!=5.1.0
-    - packaging >=19.0
+    - astropy >=5.2.0
+    - packaging >=21.3
     - parfive >=2.0.0
+    - pyerfa >=2.0
     # asdf
-    - asdf >=2.8.0
-    - asdf-astropy >=0.1.1
-    # database
-    - sqlalchemy >=1.3.4
+    - asdf >=2.12.0
+    - asdf-astropy >=0.2.0
     # image
-    - scikit-image >=0.18.0
     - scipy >=1.7.0,!=1.10.0
     # jpeg2000
     - glymur >=0.9.1,!=0.9.5
-    - lxml >=4.8.0
+    - lxml >=4.9.0,!=5.0.0
     # map
     - matplotlib-base >=3.5.0
     - mpl_animators >=1.0.0
-    - reproject
+    - reproject >=0.9.0
+    # We don't mandate this on the core recipe
+    # opencv
+    # - opencv >=4.6.0
     # net
-    - beautifulsoup4 >=4.8.0
-    - drms >=0.6.1,<0.7.0
+    - beautifulsoup4 >=4.11.0
+    - drms >=0.7.1
     - python-dateutil >=2.8.0
-    - tqdm >=4.32.1
-    - zeep >=3.4.0
+    - tqdm >=4.64.0
+    - zeep >=4.1.0
     # spice
-    - spiceypy
+    - spiceypy >=5.0.0
     # timeseries
-    - cdflib >=0.3.20,!=0.4.0,!=1.0.0
-    - h5netcdf >=0.11.0
-    - h5py >=3.1.0 # Not a direct dependancy, but goes files wont load without
-    - pandas >=1.2.0
+    - cdflib >=0.4.4,!=1.0.0
+    - h5netcdf >=1.0.0
+    - h5py >=3.7.0 # Not a direct dependancy, but goes files wont load without
+    - pandas >=1.4.0
 
 test:
   requires:
     - hvpy
     - hypothesis
     - jplephem
-    - opencv
     - libopencv *=headless*               # [unix]
+    - opencv
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
     - pytest-xdist
 
-  imports:
-    - sunpy
-    - sunpy.cm
-    - sunpy.coordinates
-    - sunpy.data
-    - sunpy.database
-    - sunpy.image
-    - sunpy.instr
-    - sunpy.io
-    - sunpy.map
-    - sunpy.map.sources
-    - sunpy.net
-    - sunpy.net.hek
-    - sunpy.net.hek2vso
-    - sunpy.net.helio
-    - sunpy.net.jsoc
-    - sunpy.net.vso
-    - sunpy.physics
-    - sunpy.roi
-    - sunpy.sun
-    - sunpy.tests
-    - sunpy.time
-    - sunpy.timeseries
-    - sunpy.timeseries.sources
-    - sunpy.util
-    - sunpy.visualization
-
 about:
   home: https://www.sunpy.org/
   license: BSD-2-Clause
   license_file: LICENSE.rst
-  summary: SunPy is an open-source Python library for Solar Physics data analysis and visualization.
+  summary: "SunPy core package: Python for Solar Physics"
   license_family: BSD
   dev_url: https://github.com/sunpy/sunpy
 
