@@ -7,7 +7,7 @@ Home: https://www.sunpy.org/
 
 Package license: BSD-2-Clause
 
-Summary: SunPy is an open-source Python library for Solar Physics data analysis and visualization.
+Summary: SunPy core package - sunpy is a software library that provides fundamental tools for accessing, loading and interacting with solar physics data in Python
 
 Development: https://github.com/sunpy/sunpy
 
@@ -50,13 +50,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_numpy2.0python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1975&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sunpy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy2.0python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_numpy2.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1975&branchName=main">
@@ -75,13 +68,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1975&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sunpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy2.0python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_numpy2.0python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1975&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sunpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy2.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -106,13 +92,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_numpy2.0python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1975&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sunpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy2.0python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>win_64_numpy2.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1975&branchName=main">
@@ -133,13 +112,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sunpy-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy2.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>win_64_numpy2.0python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1975&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sunpy-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy2.0python3.9.____cpython" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -158,14 +130,14 @@ Current release info
 Installing sunpy
 ================
 
-Installing `sunpy` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `sunpy` from the `conda-forge/label/sunpy_rc` channel can be achieved by adding `conda-forge/label/sunpy_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/sunpy_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sunpy` can be installed with `conda`:
+Once the `conda-forge/label/sunpy_rc` channel has been enabled, `sunpy` can be installed with `conda`:
 
 ```
 conda install sunpy
@@ -180,26 +152,26 @@ mamba install sunpy
 It is possible to list all of the versions of `sunpy` available on your platform with `conda`:
 
 ```
-conda search sunpy --channel conda-forge
+conda search sunpy --channel conda-forge/label/sunpy_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search sunpy --channel conda-forge
+mamba search sunpy --channel conda-forge/label/sunpy_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search sunpy --channel conda-forge
+mamba repoquery search sunpy --channel conda-forge/label/sunpy_rc
 
 # List packages depending on `sunpy`:
-mamba repoquery whoneeds sunpy --channel conda-forge
+mamba repoquery whoneeds sunpy --channel conda-forge/label/sunpy_rc
 
 # List dependencies of `sunpy`:
-mamba repoquery depends sunpy --channel conda-forge
+mamba repoquery depends sunpy --channel conda-forge/label/sunpy_rc
 ```
 
 
