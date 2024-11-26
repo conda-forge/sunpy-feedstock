@@ -33,7 +33,8 @@ requirements:
   run:
     - python
     # base
-    - astropy-base >=5.2.0
+    - astropy-base >=5.2.0  # [py<311]
+    - astropy >=5.2.0  # [py>310]
     - numpy >=1.23.0
     - packaging >=21.3
     - parfive >=2.0.0
