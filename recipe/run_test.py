@@ -11,6 +11,6 @@ import sunpy
 
 if platform.machine() in ('aarch64', 'ppc64le'):
     print('WARNING: Skipping most tests on aarch64/ppc64le because they take too long')
-    sys.exit(sunpy.self_test("io"))
+    sys.exit(sunpy.self_test(package="io"))
 
 sys.exit(sunpy.self_test())
