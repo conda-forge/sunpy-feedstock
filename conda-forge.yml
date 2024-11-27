@@ -9,3 +9,5 @@ github:
 provider:
   win: azure
 test: native_and_emulated
+build_platform:
+  linux_aarch64: linux_64
