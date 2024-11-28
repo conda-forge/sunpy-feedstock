@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<310]
 
@@ -33,7 +33,7 @@ requirements:
   run:
     - python
     # base
-    - astropy >=5.2.0
+    - astropy-base >=5.2.0
     - numpy >=1.23.0
     - packaging >=21.3
     - parfive >=2.0.0
