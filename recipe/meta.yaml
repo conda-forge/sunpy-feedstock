@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "6.1.0" %}
-{% set sha256 = "fecd0625183ffe752652fbf03a4171f71f93ab22158486182dac5c3dc9f8c8ba" %}
+{% set version = "6.1.1" %}
+{% set sha256 = "c609a6b1b0bb286bd42789940f54fcb7d6900dfcfe217df54f859ff6082e13db" %}
 
 package:
   name: {{ name|lower }}
@@ -32,7 +32,7 @@ requirements:
     - numpy
   run:
     - python
-    - sqlite!=3.49.0,!=3.49.1  # https://github.com/conda-forge/sqlite-feedstock/issues/130
+    - sqlite !=3.49.0,!=3.49.1  # https://github.com/conda-forge/sqlite-feedstock/issues/130
     # base
     - astropy-base >=6.0.0
     - numpy >=1.24.0
