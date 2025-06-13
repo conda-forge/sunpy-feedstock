@@ -74,7 +74,8 @@ test:
     - hypothesis
     - jplephem
     - scikit-image
-    - libopencv >=4.10 *headless*               # [unix]
+    - libopencv * headless*               # [unix]
+    - libopencv >=4.10                    # [unix]
     - opencv
     - pytest-astropy
     - pytest-mock
