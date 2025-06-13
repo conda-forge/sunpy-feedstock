@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "7.0.0rc1" %}
-{% set sha256 = "5f53be026a692529c2105e4af334cf9e15d08a123591fa5511a4e1852c941681" %}
+{% set version = "7.0.0rc3" %}
+{% set sha256 = "e5816ca21d67261812a0697a56ecb5b2f8f72a8f5bd386a2acd68145cd1157db" %}
 
 package:
   name: {{ name|lower }}
@@ -79,7 +79,6 @@ test:
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
-    - pytest-xdist
 
 about:
   home: https://www.sunpy.org/
