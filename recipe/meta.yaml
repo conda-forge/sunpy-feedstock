@@ -72,7 +72,7 @@ test:
     - hypothesis
     - jplephem
     - scikit-image
-    - libopencv *=headless*               # [unix]
+    - libopencv * headless*               # [unix]
     - opencv
     - pytest-astropy
     - pytest-mock
