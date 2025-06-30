@@ -10,10 +10,12 @@ os.environ['OMP_NUM_THREADS'] = '1'
 
 import sunpy
 
+# Bypass any issues with the older IERS data
+from astropy.utils.iers import conf
+conf.auto_max_age = None
+
 if platform.machine() in ('aarch64', 'ppc64le'):
     print('WARNING: Skipping most tests on aarch64/ppc64le because they take too long')
     sys.exit(sunpy.self_test(package="io"))
 
-with warnings.catch_warnings() as cw:
-    warnings.simplefilter("ignore")
-    sys.exit(sunpy.self_test())
+sys.exit(sunpy.self_test())
