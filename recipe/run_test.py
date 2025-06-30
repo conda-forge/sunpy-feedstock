@@ -1,5 +1,6 @@
 import os
 import sys
+import warnings
 import platform
 
 # Force OpenBLAS to use a single thread to prevent image-rotation
@@ -8,6 +9,10 @@ import platform
 os.environ['OMP_NUM_THREADS'] = '1'
 
 import sunpy
+
+# Bypass any issues with the older IERS data
+from astropy.utils.iers import conf
+conf.auto_max_age = None
 
 if platform.machine() in ('aarch64', 'ppc64le'):
     print('WARNING: Skipping most tests on aarch64/ppc64le because they take too long')
