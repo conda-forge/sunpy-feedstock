@@ -1,5 +1,6 @@
 import os
 import sys
+import warnings
 import platform
 
 # Force OpenBLAS to use a single thread to prevent image-rotation
@@ -13,4 +14,6 @@ if platform.machine() in ('aarch64', 'ppc64le'):
     print('WARNING: Skipping most tests on aarch64/ppc64le because they take too long')
     sys.exit(sunpy.self_test(package="io"))
 
-sys.exit(sunpy.self_test())
+with warnings.catch_warnings as cw:
+    warnings.simplefilter("ignore", message="interpolating from IERS_Auto using predictive values that are more")
+    sys.exit(sunpy.self_test())
