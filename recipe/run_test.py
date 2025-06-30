@@ -15,5 +15,5 @@ if platform.machine() in ('aarch64', 'ppc64le'):
     sys.exit(sunpy.self_test(package="io"))
 
 with warnings.catch_warnings() as cw:
-    warnings.simplefilter("ignore", message="interpolating from IERS_Auto using predictive values that are more")
+    warnings.simplefilter("ignore")
     sys.exit(sunpy.self_test())
