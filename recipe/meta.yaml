@@ -61,7 +61,7 @@ requirements:
     - tqdm >=4.66.0
     - zeep >=4.3.0
     # spice
-    - spiceypy >=6.0.0
+    - spiceypy >=6.0.0  # [not ppc64le]
     # timeseries
     - cdflib >=1.3.2
     - h5netcdf >=1.2.0
