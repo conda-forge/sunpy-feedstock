@@ -80,6 +80,7 @@ test:
     - pytest-astropy
     - pytest-mock
     - pytest-mpl
+    - pytest-asdf-plugin
 
 about:
   home: https://www.sunpy.org/
