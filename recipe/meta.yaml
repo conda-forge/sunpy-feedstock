@@ -15,7 +15,7 @@ build:
   number: 0
   python_version_independent: true  # [is_abi3]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: True  # [is_abi3 and not is_python_min]
+  skip: True  # [is_abi3 and py != 311 ]
 
 requirements:
   build:
