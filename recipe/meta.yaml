@@ -1,6 +1,7 @@
 {% set name = "sunpy" %}
 {% set version = "7.0.2" %}
 {% set sha256 = "d878be90b5666e696ca385e06489b12daede2d518dcf4f5d9eb53314383b2dbb" %}
+{% set py_str = (py | string)[0] ~ "." ~ (py | string)[1:] %}
 
 package:
   name: {{ name|lower }}
@@ -86,8 +87,8 @@ test:
     - abi3audit                      # [is_abi3]
   commands:
     - pip check
-    - abi3audit $SP_DIR/spam.abi3.so -s -v --assume-minimum-abi3 {{ (py | str)[0] ~ "." ~ (py | str)[1:] }}   # [unix and is_abi3]
-    - abi3audit %SP_DIR%/spam.pyd -s -v --assume-minimum-abi3 {{ (py | str)[0] ~ "." ~ (py | str)[1:] }}      # [win and is_abi3]
+    - abi3audit $SP_DIR/spam.abi3.so -s -v --assume-minimum-abi3 {{ py_str }}   # [unix and is_abi3]
+    - abi3audit %SP_DIR%/spam.pyd -s -v --assume-minimum-abi3 {{ py_str }}      # [win and is_abi3]
 
 
 about:
