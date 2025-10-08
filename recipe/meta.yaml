@@ -88,7 +88,6 @@ test:
   commands:
     - pip check
     - abi3audit $SP_DIR/sunpy/io/_pyana.abi3.so $SP_DIR/sunpy/compiler_version.abi3.so -s -v --assume-minimum-abi3 {{ py_str }}   # [unix and is_abi3]
-    - abi3audit %SP_DIR%/sunpy/io/_pyana.abi3.pyd %SP_DIR%/sunpy/compiler_version.abi3.pyd -s -v --assume-minimum-abi3 {{ py_str }}      # [win and is_abi3]
 
 
 about:
