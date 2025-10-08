@@ -1,3 +1,4 @@
+{% set python_min = "3.11" %}
 {% set name = "sunpy" %}
 {% set version = "7.0.2" %}
 {% set sha256 = "d878be90b5666e696ca385e06489b12daede2d518dcf4f5d9eb53314383b2dbb" %}
@@ -15,7 +16,7 @@ build:
   number: 0
   python_version_independent: true  # [is_abi3]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: True  # [py<311 and is_abi3 and not is_python_min]
+  skip: True  # [is_abi3 and not is_python_min]
 
 requirements:
   build:
