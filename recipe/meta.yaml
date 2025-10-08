@@ -13,8 +13,9 @@ source:
 
 build:
   number: 0
+  python_version_independent: true  # [is_abi3]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py<311]
+  skip: True  # [py<311 and is_abi3 and not is_python_min]
 
 requirements:
   build:
@@ -24,6 +25,7 @@ requirements:
     - {{ compiler('c') }}  # [not win]
     - {{ stdlib("c") }}    # [not win]
   host:
+    - python-abi3  # [is_abi3]
     - python
     - pip
     - setuptools
@@ -81,6 +83,12 @@ test:
     - pytest-mock
     - pytest-mpl
     - pytest-asdf-plugin
+    - abi3audit                      # [is_abi3]
+  commands:
+    - pip check
+    - abi3audit $SP_DIR/spam.abi3.so -s -v --assume-minimum-abi3 {{ python_min }}   # [unix and is_abi3]
+    - abi3audit %SP_DIR%/spam.pyd -s -v --assume-minimum-abi3 {{ python_min }}      # [win and is_abi3]
+
 
 about:
   home: https://www.sunpy.org/
