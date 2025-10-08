@@ -86,8 +86,8 @@ test:
     - abi3audit                      # [is_abi3]
   commands:
     - pip check
-    - abi3audit $SP_DIR/spam.abi3.so -s -v --assume-minimum-abi3 {{ python_min }}   # [unix and is_abi3]
-    - abi3audit %SP_DIR%/spam.pyd -s -v --assume-minimum-abi3 {{ python_min }}      # [win and is_abi3]
+    - abi3audit $SP_DIR/spam.abi3.so -s -v --assume-minimum-abi3 {{ (py | str)[0] ~ "." ~ (py | str)[1:] }}   # [unix and is_abi3]
+    - abi3audit %SP_DIR%/spam.pyd -s -v --assume-minimum-abi3 {{ (py | str)[0] ~ "." ~ (py | str)[1:] }}      # [win and is_abi3]
 
 
 about:
