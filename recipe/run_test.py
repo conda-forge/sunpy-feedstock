@@ -16,6 +16,5 @@ conf.auto_max_age = None
 if platform.machine() in ('aarch64', 'ppc64le'):
     print('WARNING: Skipping tests on aarch64/ppc64le because they take too long')
     sys.exit()
-    # sys.exit(sunpy.self_test(package="io"))
 
 sys.exit(sunpy.self_test())
