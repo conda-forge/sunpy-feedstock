@@ -5,8 +5,7 @@
 jobs:
 - job: osx
   pool:
-    # Due to https://github.com/conda-forge/opencv-feedstock/issues/493
-    vmImage: macOS-14
+    vmImage: macOS-15
   strategy:
     matrix:
       osx_64_python3.11.____cpython:
