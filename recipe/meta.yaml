@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "7.1.0" %}
-{% set sha256 = "14fc177b66e233468c32a4da3479748405278271e2d1497b9dfb31a7f4a9340b" %}
+{% set version = "7.1.1" %}
+{% set sha256 = "cfe7159e0a55a3a3c895f651756c665ceab577aeb2802e1942dd4b7b801cdc31" %}
 {% set py_str = (py | string)[0] ~ "." ~ (py | string)[1:] %}
 
 package:
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   python_version_independent: true  # [is_abi3]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [is_abi3 and py != 312]
