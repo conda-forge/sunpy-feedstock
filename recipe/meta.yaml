@@ -17,6 +17,8 @@ build:
   python_version_independent: true  # [is_abi3]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [is_abi3 and py != 312]
+  script_env:
+    - EXTENSION_HELPERS_PY_LIMITED_API=cp312
 
 requirements:
   build:
