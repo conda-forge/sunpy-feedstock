@@ -105,5 +105,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - alasdairwilson
     - cadair
     - wtbarnes
