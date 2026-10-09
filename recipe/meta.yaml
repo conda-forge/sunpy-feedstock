@@ -1,6 +1,6 @@
 {% set name = "sunpy" %}
-{% set version = "8.0.0" %}
-{% set sha256 = "a675c184d5dbe455495242e446e7c10db0bbe78bbed8920e327d293ae1fb689d" %}
+{% set version = "8.0.1" %}
+{% set sha256 = "185d545a4a4b04bc8924170d47c25fb4d736e174cf55ff386a2eae52606b1240" %}
 {% set py_str = (py | string)[0] ~ "." ~ (py | string)[1:] %}
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
